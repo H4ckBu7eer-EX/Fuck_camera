@@ -1,4 +1,3 @@
-
 import argparse
 from cv2 import VideoCapture, imwrite
 
@@ -28,8 +27,6 @@ if args.use:
     save_path = args.folder if args.folder else "."
     ret, frame = cap.read()
     imwrite(f'{save_path}/shot.png', frame)
-
-    # 打印最终保存目录
     print(f"照片保存至{save_path}目录!")
 
 
